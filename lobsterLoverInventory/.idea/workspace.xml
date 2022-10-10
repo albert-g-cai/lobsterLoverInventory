@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="lobsterWeb:war exploded" />
+      <artifact name="lobsterLoverInventory:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ea4fcb-247a-4f63-b567-0efb699a741d" name="Default Changelist" comment="" />
+    <list default="true" id="18649e9a-b9ca-4eb8-879c-21a93bb2526c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jsp File" />
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -33,24 +23,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="2Ft0m9KmttkGKwKRzMJ5jnYQzEw" />
+  <component name="ProjectId" id="2FxVBf3xgB92bW6HgtcRoUVFAVE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2528335" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\workspace\IdeaProjects\lobsterLoverRestful\lobsterWeb\src\com\lobsterWeb\mapper" />
-      <recent name="C:\workspace\IdeaProjects\lobsterLoverRestful\lobsterWeb\web\WEB-INF\lib" />
-      <recent name="C:\workspace\IdeaProjects\lobsterLoverRestful\lobsterWeb\src\com\lobsterWeb\util" />
-      <recent name="C:\workspace\IdeaProjects\lobsterLoverRestful\lobsterWeb\web\js" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,44 +41,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="GetSqlSession" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lobsterWeb.util.GetSqlSession" />
-      <module name="lobsterWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lobsterWeb.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lobsterWeb.test.Test" />
-      <module name="lobsterWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lobsterWeb.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Tomcat 8.5.47" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/lobsterWeb/" />
       <deployment>
-        <artifact name="lobsterWeb:war exploded">
+        <artifact name="lobsterLoverInventory:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/lobsterWeb" />
+            <option name="CONTEXT_PATH" value="/lobsterLoverInventory" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_47_lobsterWeb" />
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_47_lobsterLoverInventory" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -109,7 +59,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="2382" />
+        <option name="DEBUG_PORT" value="9239" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -159,42 +109,37 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="lobsterWeb:war exploded" />
+          <artifact name="lobsterLoverInventory:war exploded" />
         </option>
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.GetSqlSession" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SvnConfiguration" cleanupOnStartRun="true">
-    <configuration>C:\Users\user\AppData\Roaming\Subversion</configuration>
-    <supportedVersion>125</supportedVersion>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="00ea4fcb-247a-4f63-b567-0efb699a741d" name="Default Changelist" comment="" />
-      <created>1665296228647</created>
+      <changelist id="18649e9a-b9ca-4eb8-879c-21a93bb2526c" name="Default Changelist" comment="" />
+      <created>1665433587415</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665296228647</updated>
-      <workItem from="1665296235875" duration="17917000" />
-      <workItem from="1665332609765" duration="826000" />
-      <workItem from="1665333516291" duration="3475000" />
-      <workItem from="1665338565174" duration="3482000" />
-      <workItem from="1665342724616" duration="8039000" />
-      <workItem from="1665366466660" duration="34746000" />
-      <workItem from="1665435546432" duration="532000" />
+      <updated>1665433587415</updated>
+      <workItem from="1665433592898" duration="1929000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,3 +1,9 @@
+/**
+ * Created by Albert Cai.
+ *         Date: 2022/10/9
+ *         Time: 2:25
+ */
+
 package com.lobsterWeb.entity;
 
 public class User {
