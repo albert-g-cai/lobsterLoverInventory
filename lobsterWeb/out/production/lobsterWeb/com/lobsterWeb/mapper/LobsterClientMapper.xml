@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+        namespace: the interface that map Entity to DAO(LobsterClientMapper) layer interface.
+-->
+<mapper namespace="com.lobsterWeb.mapper.LobsterClientMapper">
+    <!--
+            id: is the method name of the corresponding DAO(LobsterClientMapper) interface;
+            parameterType: the parameter of the method of the interface;
+            resultType: the return type of the method of the interface;
+    -->
+    <!--    useGeneratedKey="true" means the key is newly increased;
+            which will be put into the designed key Property(id)
+    -->
+    <select id="queryLobsterClientByName" parameterType="String" resultType="com.lobsterWeb.entity.ALobsterClient">
+         SELECT * FROM tb_lobsterwebforlobsterlovers where uLobsterClientName = #{aLobsterClientName}
+    </select>
+
+    <select id="queryLobsterClientByName1" parameterType="String" resultType="com.lobsterWeb.entity.ALobsterClient">
+         SELECT * FROM tb_lobsterwebforlobsterlovers where userName = #{userName}
+    </select>
+</mapper>

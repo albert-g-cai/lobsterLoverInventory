@@ -1,0 +1,90 @@
+Design thoughts and data flow:
+
+Layer Design(Lower coupling)
+    Entity: PO, Model, JavaBean entity defined based on the user requirements.
+    Mapper: mapper.xml
+    Interface: plays a role interaction between service layer and database.
+    Util£º  General tool frequently used by all entities and classes, etc.
+    Test:   Testing classes and method.
+
+Details implementation:
+    Database
+    1.  Database table: tb_lobsterClient (MySQL)
+        Database script:
+
+    Front Page
+    2.  Front End: the login page: index.jsp, login.jsp
+        User login JQuery/Javascript check
+        1.  Give the login button bond click event
+        2.  Obtain lobsterClient name and password value
+        3.  Judge if the name is empty
+            if the name is empty, tips lobsterLover (span tag default value),
+            then return
+        4.  Judge if the password is correct
+            if the password is empty, tips lobsterLover
+            (span tag default value), then return
+        5.  If the values to be checked is not empty,
+            click the submit button to send the login form.
+        First page: index.jsp.
+        Login page: login.jsp.
+
+    Back End Implementation
+        Backend function interact with the Login Function
+	    lobster client info passed to servlet/message model:
+	    1.  accept requests from the client (receive parameters: name, password)
+	    2.  judge if the parameter is empty
+	        if the parameter is empty£º¡¡
+	        pass return the results to client side through the message entity
+		    (entity's state, entity tips when return, show the entity's data)
+		    set the message body or entity inside request action area.
+		    request redirect to the login page
+		    return.
+	    3.  query through lobster client name.
+	    4.  judge if the client is exist
+		    if empty£º
+		        pass return the results to client side through the message entity
+		        (entity's state, entity tips when return, show the entity's data)
+		        set the message body or entity inside request action area.
+		        request redirect to the login page
+		        return.
+	    5.  pass the password to compare with the password from database
+	        if not equal,
+	            pass return the results to client side through the message entity
+		        (entity's state, entity tips when return, show the entity's data)
+		        set the message body or entity inside request action area.
+		        request redirect to the login page
+		        return.
+	        if equal,
+	        login sucessful, save the lobster client info into session action area.
+
+        Controller layer:
+            A.  Receive the request from lobster client.
+            B.  Call service layer method and return message model entity
+            C.  Judge message model:
+                state£º if fail state, state=1,  message model entity saved in
+                        session scope, request redirect to login.jsp
+                        if success state, state=0, lobster client info
+                        contained in message model entity saved in session scope.
+            D.  Return: info contained in message model entity returned back to lobster client.
+        Service layer:
+            Business logic based on the user requirement: judgement, calculation.
+            1.  judge parameter empty
+                if empty:
+                    save: state, msg and dataInScope to message model,
+                    return message model.
+            2.  call DAO layer for query method to retrieve lobster client info
+            3.  judge lobster client info compare the lobster saved in database
+                if empty:
+                    save: state, msg and dataInScope to message model,
+                    return message model.
+            4.  judge lobster client password compare the password saved in database
+                if not equal:
+                    save: state, msg and dataInScope to message model,
+                    return message model.
+            5.  login success, state, msg, lobster client saved in message model
+                    return message model.
+        mapper layer:
+            design the interface between lobster client and database.
+
+
+

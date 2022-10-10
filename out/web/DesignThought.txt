@@ -1,0 +1,15 @@
+User Login:
+    1.  Database table: tb_user (MySQL)
+    2.  Front End:
+        The login page: login.jsp
+        User login Javascript check
+        1.  Give the login buttion bond click event
+        2.  Obtain lobsterLover name and password value
+        3.  Judge if the name is empty
+                if the name is empty, tips lobsterLover (span tag default value), then return
+        4.  Judge if the password is correct
+                            if the password is empty, tips lobsterLover (span tag default value), then return
+        5.  If the values to be checked is not empty, click the submit button to send the login form.
+        First page: index.jsp
+    3.  Back End Implementation
+        Login Function
